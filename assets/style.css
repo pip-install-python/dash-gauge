@@ -1,0 +1,127 @@
+:root {
+    --ha-background: rgb(11, 15, 25);
+    --ha-button-primary-background: rgba(17, 24, 39, 0.9);
+    --ha-button-primary-border: #437882;
+    --ha-button-primary-color: #565656;
+}
+body {
+    background-color: var(--ha-background);
+    color: white;
+    font-family: sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+.area {
+    background: radial-gradient(circle at 50% 50%, rgb(25 49 58) 0%, rgba(17, 24, 39, 1) 50%, rgba(17, 24, 39, 1) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+}
+.current-temperature {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 100;
+    font-size: 60px;
+    line-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.current-temperature span {
+    color: white;
+    font-size: 15px;
+    line-height: 15px;
+}
+.actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+}
+.actions-left {
+    position: absolute;
+    top: 17%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+}
+.fab {
+    background-color: var(--ha-button-primary-background);
+    border-radius: 100%;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    border: 2px solid var(--ha-button-primary-color);
+    width: 50px;
+    height: 50px;
+    outline: 0;
+    color: var(--ha-button-primary-color);
+    transition: all 0.3s ease;
+}
+.fab-large {
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+}
+.fab-active {
+    border-color: var(--ha-button-primary-border);
+}
+.fab i {
+    font-size: 20px;
+}
+.fab-large i {
+    font-size: 40px;
+}
+.fab-heat.fab-active {
+    color: #cfac48;
+    border-color: #cfac48;
+}
+.fab-cool.fab-active {
+    color: #2c8e98;
+    border-color: #2c8e98;
+}
+.fab-dry.fab-active {
+    color: #ffc0bd;
+    border-color: #ffc0bd;
+}
+.fab-fan.fab-active {
+    color: #437882;
+    border-color: #437882;
+}
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.fan-icon {
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.fan-low {
+    animation-duration: 5s;
+}
+.fan-mid {
+    animation-duration: 3s;
+}
+.fan-high {
+    animation-duration: 1s;
+}

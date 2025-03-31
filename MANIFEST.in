@@ -1,0 +1,11 @@
+include dash_gauge/dash_gauge.min.js
+include dash_gauge/dash_gauge.min.js.map
+include dash_gauge/async-*.js
+include dash_gauge/async-*.js.map
+include dash_gauge/*-shared.js
+include dash_gauge/*-shared.js.map
+include dash_gauge/metadata.json
+include dash_gauge/package-info.json
+include README.md
+include LICENSE
+include package.json
