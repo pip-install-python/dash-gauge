@@ -9,13 +9,6 @@ Explore demos & the interactive documentation:
 
 https://pip-install-python.com/pip/dash_gauge
 
-# Dash Component Suite: Gauges, Knobs, Thermostat, Joystick & Display
-
-[![PyPI version](https://badge.fury.io/py/dash-gauge.svg)](https://badge.fury.io/py/dash-gauge)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-A collection of interactive and visually appealing components for Plotly Dash. Enhance your dashboards with gauges, knobs, thermostats, joysticks, and 7-segment displays.
-
 This library currently includes:
 
 *   **`DashGauge`**: Customizable gauge charts (Grafana, Semicircle, Radial styles).
